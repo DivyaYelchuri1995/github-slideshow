@@ -1,0 +1,33 @@
+#import math as m
+#print(5<3 or 5>10)          #logical or
+#print(5>3 and 5<10)         #logical and
+#print(True<False)           #Boolean keywords True and false
+#x=None
+#print(x)                    #None keyword example
+#a="Hello"
+#assert a=="Hello"           #Asserting if the condition is true
+#print(a)
+#assert x==None
+#print(x)
+#b=90
+#print(m.sin(b))             #using as keyword
+#assert a=="Buddy"        #interpreter throwing an AssertionError
+#print(a)
+class Name:                 #Defining a class and creating an object in Python
+    FirstName="Divya"
+    #MiddleName=None
+    LastName="Yelchuri"
+    def Info(self):
+        print("Dob is",DOB)
+        global Age              #Using global keyword  variable to access it outside method
+        Age=2020-DOB
+DOB=1995                    #global variable
+ob1=Name()                  #object1 creation
+ob2=Name()                  #object 2 creation
+print(ob1.FirstName,ob1.LastName,end="\n")          #object-fleid invocation
+#ob1.Info()                          #object-method invocation
+Name.Info(ob1)                         #method invocation without using object or self in method  definition
+print("Age is",Age)
+#print(ob1.Age)--------> Not right statement because Age is a local variable of the function Info() when the fn invoked automatically the variable is invoked
+#del ob2                    #deleting an object
+#print(ob2)
